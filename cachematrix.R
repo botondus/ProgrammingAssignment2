@@ -1,5 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
+# The functions below provide a way to cache matrix inversions
 
 # This function creates a special matrix which is really
 # a list containing a function to
@@ -27,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # the computation if it finds one.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
-  inv <= x$getinverse()
+  inv <- x$getinverse()
   if(!is.null(inv)) {
     message("getting cached data!")
     return(inv)
